@@ -33,7 +33,7 @@
     echo  '</div>';
         if ($result = mysqli_query($db, $query)) {
             while ($row = mysqli_fetch_assoc($result)) {
-            $comment_global = "select * from postcomment where post_id='".$row['post_id']."'";//评论数
+            $comment_global = "select * from postcomment where post_id='".$row['post_id']."'";//评论数计算
             if($comment_global_result = mysqli_query($db,$comment_global)){
                 $comment_count = mysqli_num_rows($comment_global_result);
              }                
