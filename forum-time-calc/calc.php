@@ -36,7 +36,8 @@
             $comment_global = "select * from postcomment where post_id='".$row['post_id']."'";//评论数计算
             if($comment_global_result = mysqli_query($db,$comment_global)){
                 $comment_count = mysqli_num_rows($comment_global_result);
-             }                
+             } 
+             //评论情况               
             echo "<div class='posts_content'>";
             echo "<li class='list-inline'>";
             echo "<div class='media media_magin'>";
