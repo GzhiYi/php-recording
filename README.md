@@ -27,3 +27,4 @@ ate_default_timezone_set("Etc/GMT-8");
 > 10行调用php函数将时间转为类似 201706242201 然后进行相减。获得最新帖子发布距离现在的秒数。$lasttime为最新评论的unix时间戳
 > 11-24行对获得的秒数进行逻辑判断。展示为bootstrap的警告框 alert 组件
 ## 展示图
+![](https://github.com/GzhiYi/php-recording/blob/master/forum-time-calc/img/calc.png)
